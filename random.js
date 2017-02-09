@@ -5,27 +5,58 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    makeRect(0, 0, 250, 100, "black", 1)
-    makeCircle(40, 50, 15, "yellow", 1)
-    makePolygon("60,35 60,65 40,50", "black", 1)
-    makeCircle(60, 50, 3, "white", 1)
-    makeCircle(80, 50, 3, "white", 1)
-    makeCircle(100, 50, 3, "white", 1)
-    makeCircle(120, 50, 6, "white", 1)
-    makeCircle(140, 50, 3, "white", 1)
-    makeCircle(160, 50, 3, "white", 1)
-    makeCircle(180, 50, 3, "white", 1)
-    makeRect(200, 42.5, 25, 18, "red", 1)
-    makeEllipse(210, 42.5, 10, 11, "red", 1)
-    makeEllipse(215, 42.5, 10, 11, "red", 1)
-    makeRect(210, 31.5, 5, 10, "red", 1)
-    makeRect(200, 50, 5, 15, "red", 1)
-    makeRect(210, 50, 5, 15, "red", 1)
-    makeRect(220, 50, 5, 15, "red", 1)
-    makeCircle(206, 45, 5, "white", 1)
-    makeCircle(217, 45, 5, "white", 1)
-    makeCircle(215, 47, 2, "blue", 1)
-    makeCircle(205, 47, 2, "blue", 1)
+    var pacman = Math.random()
+    if(pacman < 0.5) {
+        makeRect(0, 0, 250, 100, "black", 1)
+        makeCircle(40, 50, 15, "yellow", 1)
+        makePolygon("60,35 60,65 40,50", "black", 1)
+        makeCircle(60, 50, 3, "white", 1)
+        makeCircle(80, 50, 3, "white", 1)
+        makeCircle(100, 50, 3, "white", 1)
+        makeCircle(120, 50, 6, "white", 1)
+        makeCircle(140, 50, 3, "white", 1)
+        makeCircle(160, 50, 3, "white", 1)
+        makeCircle(180, 50, 3, "white", 1)
+        makeRect(200, 42.5, 25, 18, "red", 1)
+        makeEllipse(210, 42.5, 10, 11, "red", 1)
+        makeEllipse(215, 42.5, 10, 11, "red", 1)
+        makeRect(210, 31.5, 5, 10, "red", 1)
+        makeRect(200, 50, 5, 15, "red", 1)
+        makeRect(210, 50, 5, 15, "red", 1)
+        makeRect(220, 50, 5, 15, "red", 1)
+        makeCircle(206, 45, 5, "white", 1)
+        makeCircle(217, 45, 5, "white", 1)
+        makeCircle(215, 47, 2, "blue", 1)
+        makeCircle(205, 47, 2, "blue", 1)
+    } else {
+        makeRect(0, 0, 250, 100, "black", 1)
+        makeCircle(40, 50, 15, "yellow", 1)
+        makePolygon("60,35 60,65 40,50", "black", 1)
+        makeCircle(60, 50, 3, "white", 1)
+        makeCircle(80, 50, 3, "white", 1)
+        makeCircle(100, 50, 3, "white", 1)
+        makeCircle(120, 50, 3, "white", 1)
+        makeCircle(140, 50, 3, "white", 1)
+        makeCircle(160, 50, 3, "white", 1)
+        makeCircle(180, 50, 3, "white", 1)
+        makeRect(200, 42.5, 25, 18, "blue", 1)
+        makeEllipse(210, 42.5, 10, 11, "blue", 1)
+        makeEllipse(215, 42.5, 10, 11, "blue", 1)
+        makeRect(210, 31.5, 5, 10, "blue", 1)
+        makeRect(200, 50, 5, 15, "blue", 1)
+        makeRect(210, 50, 5, 15, "blue", 1)
+        makeRect(220, 50, 5, 15, "blue", 1)
+        makeRect(205, 43, 5, 5, "white", 1)
+        makeRect(215, 43, 5, 5, "white", 1)
+        makeRect(205, 55, 2, 2, "white", 1)
+        makeRect(207, 53, 2, 2, "white", 1)
+        makeRect(209, 53, 2, 2, "white", 1)
+        makeRect(211, 55, 2, 2, "white", 1)
+        makeRect(213, 55, 2, 2, "white", 1)
+        makeRect(215, 53, 2, 2, "white", 1)
+        makeRect(217, 53, 2, 2, "white", 1)
+        makeRect(219, 55, 2, 2, "white", 1)
+    }
 }
 
 
@@ -33,12 +64,22 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    makeRect(0, 0, 250, 100, "red", 1)
-    makeCircle(125, 50, 32, "yellow", 1)
-    makeCircle(125, 50, 30, "white",1)
-    makePolygon("160,5 115,40 125,40 105,60 115,60 95,90", "yellow", 1)
-    makePolygon("145,35 135,35 117,60", "yellow", 1)
-    makePolygon("120,55 135,55 90,95", "yellow", 1)
+    var flash = Math.random()
+    if(flash < 0.5) {
+        makeRect(0, 0, 250, 100, "red", 1)
+        makeCircle(125, 45, 32, "yellow", 1)
+        makeCircle(125, 45, 30, "white",1)
+        makePolygon("160,5 115,40 125,40 105,60 115,60 95,90", "yellow", 1)
+        makePolygon("145,35 135,35 117,60", "yellow", 1)
+        makePolygon("120,55 135,55 90,95", "yellow", 1)
+    } else {
+        makeRect(0, 0, 250, 100, "yellow", 1)
+        makeCircle(125, 45, 32, "red", 1)
+        makeCircle(125, 45, 30, "black",1)
+        makePolygon("160,5 115,40 125,40 105,60 115,60 95,90", "red", 1)
+        makePolygon("145,35 135,35 117,60 ", "red", 1)
+        makePolygon("120,55 135,55 90,95", "red", 1)
+    }
 }
 
 
@@ -47,7 +88,7 @@ function createSecondScene() {
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
     makeRect(0, 0, 250, 100, "black", 1)
-    makeCircle(125, 50, 25, "green", 1)
+    makeCircle(125, 50, 32, "red", 1)
 }
 
 
