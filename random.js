@@ -87,8 +87,26 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    makeRect(0, 0, 250, 100, "black", 1)
-    makeCircle(125, 50, 32, "red", 1)
+    var batman = Math.random()
+    if (batman < 0.5) {
+        makeRect(0, 0, 250, 100, "navy", 1)
+        makeRect(115.5, 50, 19, 10, "burlywood", 1)
+        makePolygon("115,25 115,40 120,40", "black", 1)
+        makePolygon("135,25 135,40 130,40", "black", 1)
+        makePolygon("115,40 135,40 135,52 115,52", "black", 1)
+        makeCircle(125, 40, 7, "black", 1)
+        makeRect(115, 49, 5, 17, "black", 1)
+        makeRect(115, 60, 20, 6, "black",  1)
+        makeRect(130, 49, 5, 17, "black", 1)
+    } else {
+        makeRect(0, 0, 250, 100, "black", 1)
+        makeCircle(125, 50, 30, "white", 1)
+        makePolygon("125,15 137.5,20 135,35 115,35 112.5,20", "black", 1)
+        makePolygon("135,90 170,50 140,60", "black", 1)
+        makePolygon("115,90 110,60 80,50", "black", 1)
+        makePolygon("107.5,40 120,50 110,50", "red", 1)
+        makePolygon("142,40 140,50 130,50", "red", 1)
+    }   
 }
 
 
